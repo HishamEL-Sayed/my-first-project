@@ -1,0 +1,214 @@
+:root{
+    --color1:#034159;
+    --color2:#025951;
+    --color3:#02735E;
+    --color4:#038C3E;
+    --color5:#0CF25D;
+}
+body{
+   background-color:var(--color1);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Slab', serif;
+}
+header{
+    align-items: center;
+    padding: 10px 30px;
+    width: 100%;
+    position:fixed;
+    display:flex;
+    z-index:1000;
+    justify-content:space-between;
+    background-color: var(--color5);
+}
+.logo{
+    color: var(--color2);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.8em;
+      /*1.8 x 16 = px */
+}
+nav >a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: var(--color3);
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.navgation a:hover{
+    color: var(--color1);
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(img/pexels-mathilde-langevin-10897656.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2 {
+    color: var(--color1);
+    font-size: 1.4em;
+    font-weight:500;
+}
+.main h2 span{
+    color: black;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 3em;
+    font-weight: 600;    
+}
+.main h3{
+    letter-spacing: 2px;
+    color: var(--color2);
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main_btn {
+    background-color: var(--color5);
+    color: var(--color1);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.6s ease-in-out;
+}
+.main_btn:hover{
+    background-color: var(--color4);
+    transform: scale(1.1);
+}
+.social_icon a{
+    color: var(--color4);
+    font-size: 1.7em;
+    padding-right: 30px;
+    transition: transform 0.5s ease-in-out;
+}
+.social_icon a:hover{
+    transform: translateY(-5px);
+    display: inline-block;
+}
+.title{
+    color: var(--color5);
+    display: flex;
+    justify-content: center;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;  
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    border: 2px solid black;
+    width: 11.25em;
+    box-shadow: 0 5px 15px black;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: transform 0.5s ease-in-out; 
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.icon{
+    color: var(--color5);
+    text-align: center;
+    font-size: 6em;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    font-size: 1em;
+    font-weight: 700;
+    margin: 10px;
+}
+.projects{
+    background-color: var(--color4); 
+    /* change */
+}
+.projects .content{
+    margin-top: 30px;
+}
+.project_card{
+    background-color: var(--color1);
+     border: 1px solid black;
+     min-height: 14em;
+      width: 11em;
+     overflow: hidden;
+     border-radius: 10px;
+     margin: 20px;
+     transition: transform 0.5s ease-in-out; 
+}
+.project_card:hover{
+    transform: scale(1.1);
+}
+.project_img img{
+        width: 100%;
+        height: 190px;
+}
+.project_card:hover .project_img{
+    opacity: 0.8;
+    /* opacity->1 , 0 */
+}
+.project_info{
+    padding: 0.5em;
+}
+.project_categore{
+    font-size: 0.8em;
+}
+.project_titel{
+    display: flex;
+    justify-content: space-between !important;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.more_details{
+    text-decoration: none;
+    color: var(--color4);
+}
+.more_details:hover {
+    color:  var(--color5);
+}
+.content .info h3{
+    color: var(--color5);
+}
+.footer{
+    background-color: var(--color5);
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_titel{
+    font-size: 1.3em;
+    font-weight: 800;
+}
+.footer_titel span{
+    color: var(--color2);
+}
+.footer .social_icon a{
+    font-size: 1.3em;
+    padding-right: 12px;
+    color: black; 
+}
